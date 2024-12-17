@@ -1,0 +1,71 @@
+.fidget {
+  display: block;
+  background-color: #da2d29;
+  overflow: hidden;
+}
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  .eye {
+    /* height: 30px;
+    width: 30px;
+    border: 2px solid;
+    border-radius: 70% 0%;
+    position: relative;
+    transform: rotate(45deg);
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border: 2px solid;
+      border-radius: 50%;
+      top: 5px;
+      left: 5px;
+    } */
+
+    position: relative;
+    background-color: black;
+    width: 50px;
+    height: 90px;
+    border-radius: 100% 10px 20px 20px / 100% 10px 20px 15px;
+    bottom: 15px;
+    left: 0px;
+    transform: rotate(-25deg);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 10px;
+      background-color: #fff;
+      bottom: 20px;
+      left: 10px;
+      transform: perspective(30px) rotateY(25deg) skewY(35deg) translateZ(15px)
+        scale(0.7) rotateZ(-10deg);
+      animation: close-eyes 2.5s 4s linear infinite alternate;
+
+      /* border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; */
+    }
+  }
+
+  .eye-right {
+    transform: scale(-1, 1) rotate(-25deg);
+  }
+}
+
+@keyframes close-eyes {
+  10% {
+    height: 0px;
+    background-color: black;
+  }
+
+  11%,
+  100% {
+    background-color: #fff;
+    height: 8px;
+  }
+}

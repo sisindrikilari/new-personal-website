@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Portfolio Website",
+    "description": "A responsive website showcasing my skills, projects, and contact information.",
+    "image": "portfolio.png",
+    "linkToGithub": "https://github.com/username/portfolio",
+    "linkToDemo": "https://username.github.io/portfolio",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "dateCreated": "2023-10-01",
+    "status": "Completed",
+    "teamSize": 1,
+    "features": ["Responsive design", "Smooth animations", "Contact form"],
+    "challenges": "Optimizing animations for mobile devices.",
+    "tags": ["Frontend", "Personal Project"],
+    "screenshots": ["home.png", "skills.png"],
+    "timeSpent": "1 month"
+  },
+  {
+    "name": "Todo App",
+    "description": "A simple app to manage tasks with features like adding, editing, and deleting todos.",
+    "image": "todo-app.png",
+    "linkToGithub": "https://github.com/username/todo-app",
+    "linkToDemo": "https://username.github.io/todo-app",
+    "technologies": ["React", "CSS"],
+    "dateCreated": "2023-08-15",
+    "status": "Completed",
+    "teamSize": 1,
+    "features": ["Task management", "Editable todos", "Local storage support"],
+    "challenges": "Ensuring data persistence with local storage.",
+    "tags": ["Frontend", "Personal Project"],
+    "screenshots": ["tasks.png", "edit-task.png"],
+    "timeSpent": "2 weeks"
+  },
+  {
+    "name": "Weather Dashboard",
+    "description": "A web app that displays weather data for any location using an external API.",
+    "image": "weather-dashboard.png",
+    "linkToGithub": "https://github.com/username/weather-dashboard",
+    "linkToDemo": "https://username.github.io/weather-dashboard",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "dateCreated": "2023-09-10",
+    "status": "Completed",
+    "teamSize": 1,
+    "features": [
+      "City search",
+      "Real-time weather updates",
+      "Temperature graph"
+    ],
+    "challenges": "Handling API rate limits and errors gracefully.",
+    "tags": ["Frontend", "API Integration"],
+    "screenshots": ["search.png", "weather-details.png"],
+    "timeSpent": "3 weeks"
+  }
+]

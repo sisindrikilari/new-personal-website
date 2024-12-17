@@ -1,0 +1,15 @@
+.info {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+}
+.info > p {
+  text-align: start;
+  padding-bottom: 1rem;
+}
+.greeting {
+  font: var(--h1);
+}

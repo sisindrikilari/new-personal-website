@@ -1,0 +1,43 @@
+.contact {
+  background-color: var(--secondary-200) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--h1);
+  text-decoration: underline var(--accent-100) 0.3em;
+  text-underline-offset: -0.2em;
+  text-decoration-skip-ink: none;
+  transition: all 0.2s ease-in-out;
+}
+.text {
+  font-family: var(--ff);
+}
+.arrow {
+  rotate: -45deg;
+  margin: 0.2em;
+  transform: translatey(0.1em);
+  transition: all 0.4s ease-in-out;
+}
+
+.contact:hover .arrow {
+  animation: bounce 0.4s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+.contact:hover {
+  text-underline-offset: -0.3em;
+  text-decoration-thickness: 0.4em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0.1em, 0);
+  }
+
+  to {
+    transform: translate3d(0.3em, 0.1em, 0.3em);
+  }
+}

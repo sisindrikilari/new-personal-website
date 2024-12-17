@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  margin-left: 3%;
+  font: var(--h2);
+  color: var(--text-500);
+}
+
+.navs {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-item {
+  padding-right: 5%;
+  cursor: pointer;
+  text-decoration: underline;
+}

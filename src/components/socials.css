@@ -1,0 +1,47 @@
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: none;
+  overflow: none;
+  align-self: center;
+  justify-self: center;
+}
+.social-item {
+  height: 80%;
+  width: 80%;
+  /* background-color: var(--secordary-gold); */
+  border: none;
+  border-radius: var(--border-radius);
+  margin: 5px;
+  /* border-radius: 15px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 15px; */
+  padding: 5px;
+  box-shadow: 2px 5px 5px rgb(14, 13, 13);
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  /* Neomorphism */
+  border-radius: 25px;
+  background: linear-gradient(145deg, #110e0b, #14100d);
+  box-shadow: 8px 8px 16px #0b0907, -8px -8px 16px #1b1511;
+}
+
+/* .insta {
+  background: radial-gradient(
+    circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e57bc 100%)
+} */
+
+.icon {
+  font-size: 2rem;
+  color: var(--text);
+}
