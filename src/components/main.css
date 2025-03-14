@@ -1,0 +1,113 @@
+.grid {
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr) !important;
+  grid-template-rows: repeat(8, 1fr) !important;
+  view-transition-name: grid;
+  object-fit: contain;
+}
+.grid > div {
+  background-color: var(--background-100);
+  margin: 10px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: 1rem 1rem 1rem var(--background-100),
+    -1rem -1rem -1rem var(--background-50);
+}
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-timing-function: cubic-bezier(0.83, 0.17, 0.19, 0.82);
+  animation-duration: 500ms;
+}
+
+.projects {
+  grid-column: 1 / span 6;
+  grid-row: 2 / span 5;
+  view-transition-name: projects;
+}
+::view-transition-old(projects),
+::view-transition-new(projects) {
+  height: 100%;
+  overflow: hidden;
+}
+.navbar {
+  grid-column: 1 / span 12 !important;
+  grid-row: 1 / span 1;
+  view-transition-name: navbar;
+}
+.profile {
+  grid-column: 7 / span 3;
+  grid-row: 2 / span 3;
+  view-transition-name: profile;
+}
+::view-transition-old(profile),
+::view-transition-new(profile) {
+  height: 100;
+}
+.info {
+  grid-column: 10 / span 3;
+  grid-row: 2 / span 4;
+  view-transition-name: info;
+}
+::view-transition-old(info),
+::view-transition-new(info) {
+  height: 100%;
+}
+.socials {
+  grid-column: 7 / span 3;
+  grid-row: 5 / span 1;
+  view-transition-name: socials;
+}
+::view-transition-old(socials),
+::view-transition-new(socials) {
+  height: auto;
+}
+.contact {
+  grid-column: 1 / span 8;
+  grid-row: 7 / span 2;
+  view-transition-name: contact;
+}
+::view-transition-old(contact),
+::view-transition-new(contact) {
+  height: 100%;
+}
+.blog {
+  grid-column: 9 / span 4;
+  grid-row: 6 / span 3;
+  view-transition-name: blog;
+}
+::view-transition-old(blog),
+::view-transition-new(blog) {
+  height: 100%;
+}
+.fidget {
+  grid-column: 7 / span 2;
+  grid-row: 6 / span 1;
+  view-transition-name: fidget;
+}
+::view-transition-old(fidget),
+::view-transition-new(fidget) {
+  height: 100%;
+}
+.rowEnd {
+  grid-row: 8 / span 1;
+}
+.colEnd {
+  grid-column: 12 / span 1;
+}
+.colEnd > span,
+.rowEnd > span {
+  visibility: hidden;
+}
+
+.invisible {
+  visibility: hidden;
+  width: 0 !important;
+  z-index: -500;
+}
+.focus {
+  grid-row: 2 / span 6;
+  grid-column: 1 / span 11;
+}

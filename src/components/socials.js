@@ -2,9 +2,9 @@ import React from "react";
 import "./socials.css";
 import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Socials({ style }) {
+function Socials({ className }) {
   return (
-    <div className="socials " style={style}>
+    <div className={"socials " + className}>
       <a
         href="https://x.com/DiwashD35362033"
         target="_blank"

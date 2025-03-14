@@ -1,22 +1,24 @@
 .contact {
-  background-color: var(--secondary-200) !important;
+  background-color: var(--primary-200) !important;
   display: flex;
   justify-content: center;
   align-items: center;
   font: var(--h1);
-  text-decoration: underline var(--accent-100) 0.3em;
+  text-decoration: underline var(--primary-100) 0.3em;
   text-underline-offset: -0.2em;
   text-decoration-skip-ink: none;
   transition: all 0.2s ease-in-out;
 }
 .text {
   font-family: var(--ff);
+  view-transition-name: text;
 }
 .arrow {
   rotate: -45deg;
   margin: 0.2em;
   transform: translatey(0.1em);
   transition: all 0.4s ease-in-out;
+  view-transition-name: arrow;
 }
 
 .contact:hover .arrow {
@@ -29,7 +31,7 @@
   text-underline-offset: -0.3em;
   text-decoration-thickness: 0.4em;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s linear;
 }
 
 @keyframes bounce {

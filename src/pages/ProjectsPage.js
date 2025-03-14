@@ -1,7 +1,7 @@
 import React from "react";
 import Socials from "../components/socials";
 import Navbar from "../components/navbar";
-import Vision from "../components/vision";
+import Projects from "../components/projects";
 import Fidget from "../components/fidget";
 import Contact from "../components/contact";
 import Info from "../components/info";
@@ -12,7 +12,7 @@ function ProjectsPage() {
       <Navbar />
       <Profile />
       <Info />
-      <Vision />
+      <Projects />
       <Socials />
       <div className="blog grid-item">blog</div>
       <Contact />

@@ -6,10 +6,13 @@
   align-items: start;
   overflow: hidden;
 }
-.info > p {
+.message {
   text-align: start;
   padding-bottom: 1rem;
+  view-transition-name: message;
 }
+
 .greeting {
   font: var(--h1);
+  view-transition-name: greeting;
 }

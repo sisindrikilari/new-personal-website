@@ -1,9 +1,9 @@
 import React from "react";
 
-function Blog({ style }) {
+function Blog({ style, className }) {
   return (
-    <div className="blog" style={style}>
-      blog
+    <div className={"blog " + className}>
+      <span>blog</span>
     </div>
   );
 }

@@ -9,11 +9,17 @@
   --accent: hsl(25, 74%, 75%, 5%);
   --background2: hsla(25, 22%, 6%, 5%); */
 
-  --text: hsl(43, 100%, 80%);
+  /* --text: hsl(43, 100%, 80%);
   --background: hsl(26, 23%, 6%);
   --primary: hsl(40, 34%, 73%);
   --secondary: hsl(76, 35%, 31%);
-  --accent: hsl(92, 34%, 54%);
+  --accent: hsl(92, 34%, 54%); */
+
+  --text: hsl(43, 100%, 80%);
+  --background: hsl(26, 23%, 6%);
+  --primary: hsl(76, 35%, 31%);
+  --secondary: hsl(43, 62%, 34%);
+  --accent: hsl(35, 100%, 50%);
 
   --background2: hsl(40, 34%, 73%, 5%);
 
@@ -40,6 +46,7 @@
 * {
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
 }
 html {
   font-size: 100%;
