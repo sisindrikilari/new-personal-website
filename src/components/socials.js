@@ -5,6 +5,18 @@ import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 function Socials({ className }) {
   return (
     <div className={"socials " + className}>
+      {/* <figure>
+        <div class="container">
+          <div class="cube po-tm">
+            <div class="face front">1</div>
+
+            <div class="face right">3</div>
+            <div class="face left">4</div>
+
+            <div class="face bottom">6</div>
+          </div>
+        </div>
+      </figure> */}
       <a
         href="https://x.com/DiwashD35362033"
         target="_blank"

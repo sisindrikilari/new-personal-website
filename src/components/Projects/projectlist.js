@@ -1,6 +1,5 @@
 import { useState } from "react";
 const Project = ({ project, index, active }) => {
-  console.log(project);
   return (
     <div className="project" key={index}>
       <div

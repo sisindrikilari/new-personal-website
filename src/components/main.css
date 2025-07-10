@@ -8,13 +8,29 @@
   object-fit: contain;
 }
 .grid > div {
-  background-color: var(--background-100);
+  background-color: var(--background-50);
   margin: 10px;
   text-align: center;
   border-radius: var(--border-radius);
-  box-shadow: 1rem 1rem 1rem var(--background-100),
-    -1rem -1rem -1rem var(--background-50);
+  /* border: 2px solid rgba(255, 255, 255, 0.1); */
+  /* box-shadow: inset 5em 5em 50px rgba(0, 0, 0, 0.8),
+    inset 0px 0px 50px rgba(0, 0, 0, 0.8); */
+  position: relative;
 }
+/* .card::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: var(--background);
+  border-radius: inherit;
+  border: 1px solid
+    linear-gradient(45deg, var(--background), var(--background-50));
+  box-shadow: inset 4em 3em 5px rgba(0, 0, 0, 0.8);
+  z-index: -5;
+} */
 ::view-transition-group(*),
 ::view-transition-old(*),
 ::view-transition-new(*) {
@@ -59,6 +75,8 @@
   grid-column: 7 / span 3;
   grid-row: 5 / span 1;
   view-transition-name: socials;
+  box-shadow: none !important;
+  border: none !important;
 }
 ::view-transition-old(socials),
 ::view-transition-new(socials) {

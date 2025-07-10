@@ -7,6 +7,7 @@ import "./navbar.css";
 import "./fidget.css";
 import "./contact.css";
 import "./info.css";
+
 // import { wrapGrid } from "animate-css-grid";
 
 import Socials from "./socials";
@@ -37,7 +38,7 @@ function Main() {
       <Info className={isExpanded ? "colEnd" : ""} />
       <Projects
         handleClick={toggleFocus}
-        className={isExpanded ? "focus" : ""}
+        className={isExpanded ? "focus card" : " card "}
       />
       <Socials className={isExpanded ? "colEnd invisible" : ""} />
       <Blog className={isExpanded ? "rowEnd" : ""} />
