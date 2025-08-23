@@ -1,0 +1,94 @@
+@view-transition {
+  navigation: auto;
+}
+
+.projects {
+  grid-column: 1 / span 6;
+  grid-row: 2 / span 5;
+  view-transition-name: projects;
+}
+.navbar {
+  grid-column: 1 / span 12 !important;
+  grid-row: 1 / span 1;
+  view-transition-name: navbar;
+}
+.profile {
+  grid-column: 7 / span 3;
+  grid-row: 2 / span 3;
+  view-transition-name: profile;
+}
+.profile {
+  grid-column: 7 / span 3;
+  grid-row: 2 / span 3;
+  view-transition-name: profile;
+}
+.about {
+  grid-column: 10 / span 3;
+  grid-row: 2 / span 4;
+  view-transition-name: about;
+}
+.socials {
+  grid-column: 7 / span 3;
+  grid-row: 5 / span 1;
+  view-transition-name: socials;
+  box-shadow: none !important;
+  border: none !important;
+}
+.contact {
+  grid-column: 1 / span 8;
+  grid-row: 7 / span 2;
+  view-transition-name: contact;
+}
+.blog {
+  grid-column: 9 / span 4;
+  grid-row: 6 / span 3;
+  view-transition-name: blog;
+}
+.fidget {
+  grid-column: 7 / span 2;
+  grid-row: 6 / span 1;
+  view-transition-name: fidget;
+}
+
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-timing-function: cubic-bezier(0.83, 0.17, 0.19, 0.82);
+  animation-duration: 500ms;
+}
+
+::view-transition-old(projects),
+::view-transition-new(projects) {
+  height: 100%;
+  overflow: hidden;
+}
+
+::view-transition-old(profile),
+::view-transition-new(profile) {
+  height: 100;
+}
+
+::view-transition-old(about),
+::view-transition-new(about) {
+  height: 100%;
+}
+
+::view-transition-old(socials),
+::view-transition-new(socials) {
+  height: auto;
+}
+
+::view-transition-old(contact),
+::view-transition-new(contact) {
+  height: 100%;
+}
+
+::view-transition-old(blog),
+::view-transition-new(blog) {
+  height: 100%;
+}
+
+::view-transition-old(fidget),
+::view-transition-new(fidget) {
+  height: 100%;
+}

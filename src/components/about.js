@@ -1,23 +1,22 @@
 import React, { useContext } from "react";
-import "./projects.css";
-import ProjectList from "./Projects/projectlist";
+import "./about.css";
 import { LayoutContext } from "../contexts/LayoutContext";
 
-function Projects() {
+function About() {
   const { layout, setLayout } = useContext(LayoutContext);
   const handleClick = () => {
     if (layout === "") {
-      setLayout("projectPage");
+      setLayout("aboutPage");
     } else {
       setLayout("");
     }
   };
-
   return (
-    <div className={`projects ${layout}`} onClick={handleClick}>
-      <ProjectList />
+    <div className={`about ${layout}`} onClick={handleClick}>
+      <p className="greeting">Hi!</p>
+      <span className="message">My name is Diwash Dahal.</span>
     </div>
   );
 }
 
-export default Projects;
+export default About;

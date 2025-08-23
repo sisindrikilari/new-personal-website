@@ -1,0 +1,45 @@
+@view-transition {
+  navigation: auto;
+}
+.projects.projectPage {
+  grid-row: 2 / span 6;
+  grid-column: 1 / span 11;
+  view-transition-name: projects;
+}
+
+.profile.projectPage {
+  visibility: hidden;
+  width: 0 !important;
+  z-index: -500;
+  view-transition-name: profile;
+}
+.about.projectPage {
+  grid-column: 12 / span 1;
+  view-transition-name: about;
+}
+
+.socials.projectPage {
+  visibility: hidden;
+  width: 0 !important;
+  z-index: -500;
+  view-transition-name: socials;
+}
+.contact.projectPage {
+  grid-row: 8 / span 1;
+  view-transition-name: contact;
+}
+.blog.projectPage {
+  grid-row: 8 / span 1;
+  view-transition-name: blog;
+}
+.blog.projectPage > span {
+  visibility: hidden;
+}
+.fidget.projectPage {
+  grid-column: 12 / span 1;
+  grid-row: span 2;
+  view-transition-name: fidget;
+}
+.fidget.projectPage > span {
+  visibility: hidden;
+}

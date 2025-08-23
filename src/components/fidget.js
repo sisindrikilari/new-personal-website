@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./fidget.css";
+import { LayoutContext } from "../contexts/LayoutContext";
 
-function Fidget({ style, className }) {
+function Fidget() {
+  const { layout } = useContext(LayoutContext);
+
   return (
-    <div className={"fidget " + className}>
+    <div className={`fidget ${layout}`}>
       <span>
         <div className="eyes">
           <div className="eye eye-left"></div>

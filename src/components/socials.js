@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./socials.css";
 import { FaInstagram, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { LayoutContext } from "../contexts/LayoutContext";
 
-function Socials({ className }) {
+function Socials() {
+  const { layout } = useContext(LayoutContext);
+
   return (
-    <div className={"socials " + className}>
+    <div className={`socials ${layout}`}>
       {/* <figure>
         <div class="container">
           <div class="cube po-tm">
@@ -26,7 +29,7 @@ function Socials({ className }) {
         <FaTwitter className="icon" />
       </a>
       <a
-        href="https://www.instagram.com/d_boss_101_/"
+        href="https://www.instagram.com/d_llusions/"
         target="_blank"
         rel="noopener noreferrer"
         className="insta social-item"

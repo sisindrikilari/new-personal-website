@@ -1,9 +1,9 @@
 import React from "react";
 import "./navbar.css";
 
-function Navbar({ style, className }) {
+function Navbar() {
   return (
-    <div className={"navbar" + className}>
+    <div className={"navbar"}>
       <>
         <div className="name">Diwash Dahal</div>
         <div className="navs">

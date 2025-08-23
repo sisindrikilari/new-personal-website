@@ -1,24 +1,26 @@
-import React from "react";
+import "./skeleton.css";
 import Socials from "../components/socials";
 import Navbar from "../components/navbar";
 import Projects from "../components/projects";
 import Fidget from "../components/fidget";
 import Contact from "../components/contact";
-import Info from "../components/info";
+import About from "../components/about";
 import Profile from "../components/profile";
-function ProjectsPage() {
+import Blog from "../components/blog";
+
+function HomeLayout() {
   return (
     <div className="grid">
       <Navbar />
       <Profile />
-      <Info />
+      <About />
       <Projects />
       <Socials />
-      <div className="blog grid-item">blog</div>
+      <Blog />
       <Contact />
       <Fidget />
     </div>
   );
 }
 
-export default ProjectsPage;
+export default HomeLayout;

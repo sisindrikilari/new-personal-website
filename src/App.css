@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Reddit+Mono:wght@200..900&display=swap");
 .App {
   text-align: center;
+  font-family: "Atkinson Hyperlegible", "Piazzolla, serif;", "Open Sans",
+    sans-serif, system-ui, -apple-system, BlinkMacSystemFont, PingFang SC,
+    Microsoft YaHei UI, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, Helvetica, Arial !important;
 }
