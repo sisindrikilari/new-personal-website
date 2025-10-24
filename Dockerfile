@@ -1,11 +1,11 @@
 FROM node:lts-alpine AS builder
 WORKDIR /app
-copy package*.lock.json ./
-RUN npn install
+COPY package*.json ./
+RUN npm install
 COPY . .
-RUN npn run build
+RUN npm run build
 
-FROM nginx:alphine
-COPY --from=builder /app/build  /user/share/nginx/html
+FROM nginx:alpine
+COPY --from=builder /app/build  /usr/share/nginx/html
 EXPOSE 80
-CMD ["nginx" , "-g" , "daemon off";]
+CMD ["nginx" , "-g" , "daemon off:"]
